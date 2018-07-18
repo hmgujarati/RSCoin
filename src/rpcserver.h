@@ -96,7 +96,7 @@ public:
 };
 
 /**
- * PAXCHANGE RPC command dispatcher.
+ * RSCoin RPC command dispatcher.
  */
 class CRPCTable
 {

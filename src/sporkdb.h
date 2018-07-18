@@ -2,8 +2,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef PAXEXCOIN_CSPORKDB_H
-#define PAXEXCOIN_CSPORKDB_H
+#ifndef RSCoin_CSPORKDB_H
+#define RSCoin_CSPORKDB_H
 
 #include <boost/filesystem/path.hpp>
 #include "leveldbwrapper.h"
@@ -25,4 +25,4 @@ public:
 };
 
 
-#endif //PAXEXCOIN_CSPORKDB_H
+#endif //RSCoin_CSPORKDB_H

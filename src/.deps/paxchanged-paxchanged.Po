@@ -1,5 +1,5 @@
-paxchanged-paxchanged.o: paxchanged.cpp /usr/include/stdc-predef.h \
- clientversion.h config/paxchange-config.h /usr/include/c++/5/string \
+rscoind-rscoind.o: rscoind.cpp /usr/include/stdc-predef.h \
+ clientversion.h config/rscoin-config.h /usr/include/c++/5/string \
  /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/5/bits/os_defines.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -1718,7 +1718,7 @@ paxchanged-paxchanged.o: paxchanged.cpp /usr/include/stdc-predef.h \
 
 clientversion.h:
 
-config/paxchange-config.h:
+config/rscoin-config.h:
 
 /usr/include/c++/5/string:
 

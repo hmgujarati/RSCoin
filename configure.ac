@@ -6,22 +6,22 @@ define(_CLIENT_VERSION_REVISION, 0)
 define(_CLIENT_VERSION_BUILD, 1)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2018)
-AC_INIT([PAXCHANGE Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[www.savebitcoin.io],[paxchange])
+AC_INIT([RSCoin Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[www.savebitcoin.io],[RSCoin])
 AC_CONFIG_SRCDIR([src/main.cpp])
-AC_CONFIG_HEADERS([src/config/paxchange-config.h])
+AC_CONFIG_HEADERS([src/config/rscoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=paxchanged
-BITCOIN_GUI_NAME=paxchange-qt
-BITCOIN_CLI_NAME=paxchange-cli
-BITCOIN_TX_NAME=paxchange-tx
+BITCOIN_DAEMON_NAME=rscoind
+BITCOIN_GUI_NAME=rscoin-qt
+BITCOIN_CLI_NAME=rscoin-cli
+BITCOIN_TX_NAME=rscoin-tx
 
 AC_CANONICAL_HOST
 
-AH_TOP([#ifndef PAXEX_CONFIG_H])
-AH_TOP([#define PAXEX_CONFIG_H])
-AH_BOTTOM([#endif //PAXEX_CONFIG_H])
+AH_TOP([#ifndef RSC_CONFIG_H])
+AH_TOP([#define RSC_CONFIG_H])
+AH_BOTTOM([#endif //RSC_CONFIG_H])
 
 dnl faketime breaks configure and is only needed for make. Disable it here.
 unset FAKETIME

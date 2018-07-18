@@ -2,6 +2,7 @@ RSCoin
 POS/MASTERNODE
 
 Introducing RSCoin
+
 What problems is RSCoin solving?
 
 FEATURES

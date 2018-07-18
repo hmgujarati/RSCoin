@@ -242,10 +242,10 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop PAXCHANGE server.");
+            "\nStop RSC server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "PAXCHANGE server stopping";
+    return "RSC server stopping";
 }
 
 
@@ -327,33 +327,33 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* PAXCHANGE features */
-        {"PAXCHANGE", "masternode", &masternode, true, true, false},
-        {"PAXCHANGE", "listmasternodes", &listmasternodes, true, true, false},
-        {"PAXCHANGE", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"PAXCHANGE", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"PAXCHANGE", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"PAXCHANGE", "masternodedebug", &masternodedebug, true, true, false},
-        {"PAXCHANGE", "startmasternode", &startmasternode, true, true, false},
-        {"PAXCHANGE", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"PAXCHANGE", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"PAXCHANGE", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"PAXCHANGE", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"PAXCHANGE", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"PAXCHANGE", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"PAXCHANGE", "mnbudget", &mnbudget, true, true, false},
-        {"PAXCHANGE", "preparebudget", &preparebudget, true, true, false},
-        {"PAXCHANGE", "submitbudget", &submitbudget, true, true, false},
-        {"PAXCHANGE", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"PAXCHANGE", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"PAXCHANGE", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"PAXCHANGE", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"PAXCHANGE", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"PAXCHANGE", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"PAXCHANGE", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"PAXCHANGE", "checkbudgets", &checkbudgets, true, true, false},
-        {"PAXCHANGE", "mnsync", &mnsync, true, true, false},
-        {"PAXCHANGE", "spork", &spork, true, true, false},
+        /* RSCoin features */
+        {"RSCoin", "masternode", &masternode, true, true, false},
+        {"RSCoin", "listmasternodes", &listmasternodes, true, true, false},
+        {"RSCoin", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"RSCoin", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"RSCoin", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"RSCoin", "masternodedebug", &masternodedebug, true, true, false},
+        {"RSCoin", "startmasternode", &startmasternode, true, true, false},
+        {"RSCoin", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"RSCoin", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"RSCoin", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"RSCoin", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"RSCoin", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"RSCoin", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"RSCoin", "mnbudget", &mnbudget, true, true, false},
+        {"RSCoin", "preparebudget", &preparebudget, true, true, false},
+        {"RSCoin", "submitbudget", &submitbudget, true, true, false},
+        {"RSCoin", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"RSCoin", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"RSCoin", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"RSCoin", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"RSCoin", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"RSCoin", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"RSCoin", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"RSCoin", "checkbudgets", &checkbudgets, true, true, false},
+        {"RSCoin", "mnsync", &mnsync, true, true, false},
+        {"RSCoin", "spork", &spork, true, true, false},
 #ifdef ENABLE_WALLET
 
         /* Wallet */
@@ -1070,7 +1070,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> PAXCHANGE-cli " + methodname + " " + args + "\n";
+    return "> RSCoin-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)
